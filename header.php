@@ -22,7 +22,7 @@
               <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
               <ul id="nav-primary" class="right">
                 <li><a href="checkout-account.php" class="waves-effect">Login</a></li>
-                <li><a href="checkout.php" class="waves-effect"><i class="material-icons md-18">shopping_cart</i></a><span class="btn-floating btn">2</span></li>        
+                <li><a href="checkout.php" class="waves-effect"><i class="material-icons md-18">shopping_cart</i></a><span class="btn-floating btn" style="background-color: #e93400;">2</span></li>        
               </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.php" class="waves-effect">Front Page</a></li>
