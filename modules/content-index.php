@@ -1,9 +1,11 @@
 <div class="container revel-store">
+<a href="/categories-quickview.php">
 	<div class="row promos">
 		<div class="col s12 promo waves-effect waves-light" style="background-image: url('img/bg-promos.jpg');">
 			<h1 class="title center-align">Promos and Deals</h1>
 		</div>
 	</div>
+	</a>
 	<div class="row categories">
 		<div class="col s12 m4">
 			<a href="/categories-quickview.php">
