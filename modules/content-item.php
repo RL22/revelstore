@@ -28,8 +28,8 @@
 			<p>Although the world may be going the way of mobile payments, the cash drawer is still an integral part of many businesses. APG Cash Drawer® provides Revel with their sturdy cash drawers withstanding damage and ensuring long lasting use. Revel also supports double cash drawer setups for restaurants and bars that require a change in shifts where owners want to keep tills separate.</p>
 			<p class="price">$99.00</p>			
 			<div class="input-field inline">
-				<input id="qty" type="number">
 				<label for="qty">Quantity</label>
+				<input id="qty" type="number" placeholder="Quantity">
 			</div>
 			<a class="waves-effect waves-light btn">Add to Cart</a>
 		</div>

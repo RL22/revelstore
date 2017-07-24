@@ -15,6 +15,10 @@ body {
 
   main {
     flex: 1 0 auto;
+    .btn {
+    	background-color: $revel-blue;
+    	margin-top: 10px;
+    }
   }
 nav {
 	img {
@@ -102,6 +106,15 @@ nav {
 		img {
 			width: 100%;
 		}
+	}
+	label {
+		display: block;
+		margin: 10px 0px;
+	}
+	input {
+		padding: 10px;
+		border-radius: 6px;
+		border:thin solid $revel-night;
 	}
 	.sidebar {
 		background-color: $revel-navy;
