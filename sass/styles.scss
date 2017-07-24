@@ -1,0 +1,253 @@
+/* Variables */
+@import "../bower_components/materialize/sass/components/color";
+@import "../bower_components/materialize/sass/components/variables";
+$revel-blue: #00A3e0;
+$revel-night: #373B40;
+$revel-red: #E93400;
+$revel-navy: #053B66;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    color: $revel-night;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+nav {
+	img {
+		width: 100px;
+    	margin-bottom: -10px;
+	}
+	.side-nav {
+		padding: 70px 0px;
+		background-color: $primary-color;
+		li {
+			
+			a {
+				font-size: 1.2em;
+				color: white;
+
+			}
+		}
+	}
+}
+.revel-store {
+	
+}
+
+.promos {
+	color: white;
+	margin-bottom: 40px;
+	.promo {
+		padding: 70px 0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		h1 {
+			font-size: 2.4em;
+		}
+	}
+}
+.categories {
+	color: white;
+
+	.category {
+		padding: 40px;
+		margin-bottom: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 6px;
+		height: 200px;
+		color: white;
+		&:hover{
+			color: $primary-color;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+		&.waves-effect {
+			display: block;
+		}
+	}
+}
+.category-item-view, .category-items-view {
+	padding: 90px 0px;
+	h2 {
+		margin-top: 0px;
+		font-size: 2em;
+		color: $revel-blue;
+		margin-bottom: 15px;
+		font-weight: 400;
+	}
+	.price {
+		color: $revel-blue;
+		font-size: 1.2em;
+		margin-bottom: 0px;
+	}
+	.focus-image {
+		width:70%;
+		margin-bottom: 30px;
+	}
+	.category-items {
+		p {
+			color: $revel-navy;
+			strong {
+				font-size: 1.2em;
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.sidebar {
+		background-color: $revel-navy;
+		color:white;
+		min-height: 400px;
+		padding: 20px;
+		border-radius: 6px;
+		width: 90%;
+		margin-top: 50px;
+		ul {
+			.waves-effect{
+				display: block;
+			}
+			li{
+				margin: 10px 0px;
+				padding-left: 10px;
+				font-weight: 400;
+				color:white;
+
+			}
+		}
+	}
+}
+.login-create-account-view {
+	margin-top: 100px;
+	.customer-panel {
+		background-color: $revel-navy;
+		border: thin solid $revel-blue;
+		border-radius: 6px;
+		overflow: hidden;
+		color: white;
+		margin: 20px;
+		h2 {
+			padding: 20px;
+			margin: 0px auto;	
+			background-color: white;			
+			color: $revel-night;
+			font-size: 24px;
+			font-weight: 500;
+		}
+		.form-area {
+			padding: 20px 40px;
+			min-height: 350px;
+			label, input {
+				display: block;
+			}
+			input {
+				width: 100%;
+				margin: 10px 0px;
+				padding: 10px;
+				border: thin solid $revel-blue;
+				&#password {
+					margin-bottom: 20px;
+				}
+			}
+			.btn {
+				background-color: $revel-blue;
+				width: 100%;
+
+			}
+
+		}
+	}
+}
+.store-cart {
+	h1 {
+		color: $revel-blue;
+		font-size: 24px;
+		margin-left: 10px;
+	}
+	.cart-items {
+
+		.cart-item {
+			border: thin solid $revel-navy;
+			border-radius: 6px;
+			margin-bottom: 20px;
+			padding: 20px;
+			img {
+				float: left;
+				max-width: 200px;
+			}
+			&:nth-child(odd){
+				background-color: white;
+			}
+			&:nth-child(even) {
+				background-color: $revel-navy;
+				color:white;
+				span.right {
+					color: $revel-night;
+				}
+			}
+		}
+	}
+	.cart-summary {
+		border: thin solid $revel-blue;
+		background-color: $revel-navy;
+		border-radius: 6px;
+		overflow: hidden;
+		color: white;
+		label, input {
+			display: block;
+		}
+		input {
+			width: 100%;
+			margin: 10px 0px;
+			padding: 10px;
+			border: thin solid $revel-blue;
+			&#password {
+				margin-bottom: 20px;
+			}
+		}
+		.btn {
+			background-color: $revel-blue;
+			width: 100%;
+
+		}
+		.order-summary {
+			padding: 40px 30px 10px;
+		}
+		span {
+			color: $revel-blue;
+		}
+		h2 {
+			font-size: 24px;
+			background-color: white;
+			margin:0px;
+			padding: 10px 0px;
+			color: $revel-blue;
+		}
+		button {
+			border: none;
+			background: none;
+			display: block;
+			margin: 20px auto;
+		}
+	}
+}
+footer {
+
+	span {
+		color: white;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	&.page-footer {
+		background-color: $revel-night;
+	}
+}
