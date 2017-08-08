@@ -12,7 +12,38 @@ body {
     background-color: #EBEBEB;
     color: $revel-night;
   }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.btn{
+  &.alt{
+    background-color: transparent;
+    color: $revel-blue;
+    border: none;
+    &:hover{
 
+    }
+  }
+  &:hover{
+    background-color: darken($revel-blue, 5%);
+  }
+}
+.modal{
+  .modal-content{
+    margin: 20px auto;
+    input{
+      padding: 10px;
+      border-radius: 6px;
+      border: thin solid $revel-blue;
+      }
+  }
+  .modal-close{
+    float: right;
+  }
+}
   main {
     flex: 1 0 auto;
     .btn {
@@ -29,17 +60,53 @@ nav {
 		padding: 70px 0px;
 		background-color: $primary-color;
 		li {
-			
+
 			a {
 				font-size: 1.2em;
 				color: white;
-
 			}
 		}
 	}
+  ul#nav-primary{
+    li{
+      @media #{$small-and-down}{
+        margin-left: 30px;
+        margin-right: 2px;
+        }
+      }
+    a.waves-effect{
+      @media #{$small-and-down}{
+        margin: auto -20px;
+      }
+    }
+    a.btn-floating{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      line-height: 1.5;
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      margin: auto;
+      @media #{$small-and-down}{
+        margin-right: -16px;
+      }
+    }
+  }
 }
-.revel-store {
-	
+.breadcrumbs{
+  nav{
+    height: 40px;
+    line-height: 40px;
+  }
+  .breadcrumb{
+    font-size: 14px;
+    &:before{
+      vertical-align: middle;
+      font-size: 14px;
+      margin: auto;
+    }
+  }
 }
 
 .promos {
@@ -67,9 +134,6 @@ nav {
 		border-radius: 6px;
 		height: 200px;
 		color: white;
-		&:hover{
-			color: $primary-color;
-		}
 		h2 {
 			font-size: 2.2rem;
 		}
@@ -84,7 +148,7 @@ nav {
 		margin-top: 0px;
 		font-size: 2em;
 		color: $revel-blue;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 		font-weight: 400;
 	}
 	.price {
@@ -97,14 +161,38 @@ nav {
 		margin-bottom: 30px;
 	}
 	.category-items {
+
 		p {
 			color: $revel-navy;
 			strong {
 				font-size: 1.2em;
 			}
 		}
+    .product{
+      position: relative;
+      margin-bottom: 20px;
+      .col {
+        &:hover{
+          border: thin solid $revel-blue;
+          background-color: #ffffff;
+          border-radius: 6px;
+        }
+      }
+      .quick-veiw{
+        margin: auto;
+        padding: 10px 20px;
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        z-index: 2;
+        line-height: normal;
+      }
+    }
+
 		img {
-			width: 100%;
+			width: 90%;
+      margin: 10px auto;
+      padding: 5px;
 		}
 	}
 	label {
@@ -114,26 +202,31 @@ nav {
 	input {
 		padding: 10px;
 		border-radius: 6px;
-		border:thin solid $revel-night;
+		border:thin solid white;
 	}
 	.sidebar {
-		background-color: $revel-navy;
-		color:white;
 		min-height: 400px;
-		padding: 20px;
+		padding: 0 20px;
 		border-radius: 6px;
 		width: 90%;
-		margin-top: 50px;
+    h5{
+      margin-top: 0;
+    }
 		ul {
 			.waves-effect{
 				display: block;
 			}
+      a{
+        &:hover{
+          background-color: $revel-blue;
+          color: #FFFFFF;
+        }
+      }
 			li{
 				margin: 10px 0px;
 				padding-left: 10px;
 				font-weight: 400;
-				color:white;
-
+        color:$revel-navy;
 			}
 		}
 	}
@@ -149,8 +242,8 @@ nav {
 		margin: 20px;
 		h2 {
 			padding: 20px;
-			margin: 0px auto;	
-			background-color: white;			
+			margin: 0px auto;
+			background-color: white;
 			color: $revel-night;
 			font-size: 24px;
 			font-weight: 500;
@@ -188,32 +281,54 @@ nav {
 	.cart-items {
 
 		.cart-item {
-			border: thin solid $revel-navy;
 			border-radius: 6px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			padding: 20px;
 			img {
 				float: left;
-				max-width: 200px;
+        margin: 10px auto;
 			}
-			&:nth-child(odd){
-				background-color: white;
-			}
-			&:nth-child(even) {
-				background-color: $revel-navy;
-				color:white;
-				span.right {
-					color: $revel-night;
-				}
-			}
+      h5{
+        font-size: 1.4rem;
+      }
+      input{
+        border: thin solid $revel-blue;
+        border-radius: 6px;
+        width: 20%;
+        height: 30px;
+      }
+      button {
+        border: none;
+        background: none;
+      }
+      background-color: white;
+      
+			// &:nth-child(odd){
+			// 	background-color: white;
+			// }
+			// &:nth-child(even) {
+			// 	background-color: $revel-blue;
+			// 	color:white;
+			// 	span.right {
+			// 		color: $revel-night;
+      //     button {
+      //       border: none;
+      //       background: none;
+      //       color: #FFFFFF;
+      //     }
+      //     a{
+      //       color: $revel-night;
+      //     }
+			// 	}
+			// }
 		}
 	}
 	.cart-summary {
 		border: thin solid $revel-blue;
-		background-color: $revel-navy;
+		background-color: darken(white, 5%);
 		border-radius: 6px;
 		overflow: hidden;
-		color: white;
+		color: $revel-night;
 		label, input {
 			display: block;
 		}
@@ -233,16 +348,29 @@ nav {
 		}
 		.order-summary {
 			padding: 40px 30px 10px;
+      input{
+        border: thin solid $revel-blue;
+        border-radius: 6px;
+        color: $revel-night;
+        &:placeholder{
+          color: $revel-night;
+        }
+      }
+      .btn{
+        padding: 10px 20px;
+        height: 100%;
+      }
 		}
 		span {
+      font-size: 1.2rem;
 			color: $revel-blue;
 		}
 		h2 {
 			font-size: 24px;
-			background-color: white;
+			background-color: $revel-blue;
 			margin:0px;
 			padding: 10px 0px;
-			color: $revel-blue;
+			color: white;
 		}
 		button {
 			border: none;

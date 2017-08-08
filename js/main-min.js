@@ -1,1 +1,1 @@
-$(".button-collapse").sideNav();
+$(".button-collapse").sideNav(),$(".product").hover(function(){$(this).find(".quick-veiw").removeClass("hide").addClass("show")}),$(".product").mouseleave(function(){$(".quick-veiw").removeClass("show").addClass("hide")}),$("#btn-promo").click(function(){$("#promo-code").removeClass("hide").addClass("show"),$("#btn-promo").addClass("hide")}),$(document).ready(function(){$("#qv-modal").modal()});
