@@ -18,11 +18,20 @@
     <nav>
     	<div class="container">
         <div class="nav-wrapper">
-          <a href="http://revelsystems.com" class="brand-logo center"><img src="img/revel-logo.png" alt=""></a>
+          <a href="#" class="brand-logo center"><img src="img/revel-logo.png" alt=""></a>
               <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
               <ul id="nav-primary" class="right">
                 <li><a href="checkout-account.php" class="waves-effect">Login</a></li>
-                <li><a href="checkout.php" class="waves-effect"><i class="material-icons md-18">shopping_cart</i></a><a href="checkout.php" class="btn-floating btn" style="background-color: #e93400;margin-left: 0px;">2</a></li>        
+<<<<<<< HEAD
+                <li>
+                  <a href="checkout.php" class="waves-effect">
+                    <i class="material-icons md-18">shopping_cart</i>
+                    <a href="checkout.php" class="btn-floating btn" style="background-color: #e93400;margin-left: 0px;">2</a>
+                  </a>
+                </li>
+=======
+                <li><a href="checkout.php" class="waves-effect"><i class="material-icons md-18">shopping_cart</i></a><span class="btn-floating btn" style="background-color: #e93400;">2</span></li>        
+>>>>>>> parent of 0fed5ad... adds the links to revel systems homepage
               </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.php" class="waves-effect">Front Page</a></li>
